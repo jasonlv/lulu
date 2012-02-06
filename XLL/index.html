@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>小鹭鹭</title>
+<link href="../common/css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/lrtk.css">
+<script src="../common/js/jquery.min.js"></script>
+<script>
+		 jQuery(document).ready(function($) {
+			 $('.nav li:has("ul")').hover(function(){
+				 $(this).find("span").addClass('actived');
+				 $(this).find("ul").show('fast');
+				 },function(){
+					 $(this).find("ul").hide('fast');
+					 $(this).find('span').removeClass('actived');
+					 })
+		 })
+</script>
+<SCRIPT type=text/javascript src="js/slide.js"></SCRIPT>
+<script>
+ jQuery(document).ready(function($) {
+	 $('#indicator').css('left',335);
+	  $('#thumbs li a').prepend("<span></span>");
+	  $('#thumbs li a:not(:first)').addClass("grey");
+	 $('#thumbs li a').click(function(){
+		 $('#thumbs li a').not($(this)).addClass('grey');
+		 $(this).removeClass('grey');
+		 left=$(this).offset().left+120;
+		 $('#indicator').animate({left:left},400);
+		 }) 
+ })
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="top"><img src="images/top.jpg" width="1000" height="152" /></div>
+<div class="nav">
+<ul>
+    <li><span class="a">小鹭鹭</span>
+   	  <ul>
+            <li><a href="#">公司介绍</a></li>
+			<li><a href="#">公司文化</a></li>
+        </ul>
+    </li>
+    <li><span>品牌介绍</span>
+    <ul>
+        <li><a href="#">小鹭鹭</a></li>
+        <li><a href="#">鹭鹭酒家</a></li>
+        <li><a href="#">鹭鹭1985</a></li>
+        </ul>
+    </li>
+    <li><span>招牌菜推荐</span></li>
+    <li><span>各类宴请</span></li>
+    <li><span>资讯中心</span></li>
+    <li><span>促销优惠</span></li>
+    <li><span>会员专区</span></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="home_l">
+<div class="featured">
+<div><a href="#"><img src="images/imgExample_1.jpg" width="394" height="263" /></a></div>
+<div style="margin:0 0 0 10px;"><a href="#"><img src="images/imgExample_1-02.jpg" width="394" height="263" /></a></div>
+</div>
+<div class="clear"></div>
+<div class="home_quick">
+  <div class="quick_item"><h5>门店信息</h5>
+      <a href="#" class="tit_more">更多</a>
+    <div class="clear"></div>
+    <img src="images/quick_2.jpg" width="178" height="147" />
+    </div>
+    
+    <div class="quick_item"><h5>宴会销售</h5><a href="#" class="tit_more">更多</a>
+    <div class="clear"></div>
+    <img src="images/quick_3.jpg" width="178" height="147" />
+    </div>
+    
+    <div class="quick_item"><h5>新闻中心</h5><a href="#" class="tit_more">更多</a>
+    <div class="clear"></div>
+    <ul class="quick_news">
+        <li><a href="#">关于会员卡制度调整公告</a></li>
+        <li><a href="#">"我爱上海菜"抽奖结果公布</a></li>
+        <li><a href="#">精品上海菜引领甬城新食尚</a></li>
+        <li><a href="#">三新店入驻上海时尚新地标</a></li>
+        <li><a href="#">南京新街口店盛装...</a></li>
+        <li><a href="#">全国三家新店盛装开幕</a></li>
+    </ul>
+    </div>
+    <div class="quick_item lastOne"><h5>品牌商品</h5><a href="#" class="tit_more">更多</a>
+    <div class="clear"></div>
+    <ul class="quick_news">
+        <li><a href="#">端午节粽子情缘</a></li>
+        <li><a href="#">中秋家宴</a></li>
+        <li><a href="#">阳澄湖大闸蟹</a></li>
+        <li><a href="#">春节年夜饭</a></li>
+        <li><a href="#">白色情人节套餐</a></li>
+        <li><a href="#">愚人节套餐</a></li>
+    </ul>
+    </div>
+
+</div>
+</div>
+<div class="home_r">
+	<div class="sharing">
+	  <div><a href="#" class="sns_sohu"><img src="../group/images/spacer.gif" /></a> <a href="#" class="sns_renren"><img src="../group/images/spacer.gif" /></a> <a href="#" class="sns_kaixin"><img src="../group/images/spacer.gif" /></a> <a href="#" class="sns_weibo"><img src="../group/images/spacer.gif" /></a> <a href="#" class="sns_tencent"><img src="../group/images/spacer.gif" /></a> <a href="#" class="sns_douban"><img src="../group/images/spacer.gif" /></a></div>
+	</div>
+    <div class="ad"><a href="#"><img src="images/ad1.jpg" /></a></div>
+    <div class="ad"><a href="#"><img src="images/ad2.jpg" /></a></div>
+</div>
+<div class="clear"></div>
+<div class="footer">Copyright (c) Lulurest inc. 2012 All Right Reserved.  <a href="#">沪ICP备02323422</a></div>
+</div>
+</body>
+</html>

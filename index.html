@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>鹭鹭餐饮集团</title>
+<link href="common/css/global.css" rel="stylesheet" type="text/css" />
+<link href="group/css/style.css" rel="stylesheet" type="text/css" />
+<script src="common/js/jquery.min.js"></script>
+<script>
+		 jQuery(document).ready(function($) {
+			 $('.menu li:has(".subMenu")').hover(function(){
+				 var subMenuHeight=0-$(this).find('ul').height()-10;
+				 $(this).find("span").addClass("actived");
+				 $(this).find('ul').css('top',subMenuHeight).css('opacity','0.1').show().stop().animate({opacity: 1}, 500);
+				 },function(){
+					$(this).find("span.actived").removeClass("actived");
+					$(this).find("ul").hide(); 
+					 })
+			 })	 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var $grey;
+	$(".gallery div").hover(function() {
+		$grey=$('.gallery').find('div').not($(this));
+		$grey.each(function(){
+		var thumbOver = $(this).find("img").attr("src"); 
+		$(this).find("a.thumb").css({'background' : 'url(' + thumbOver + ') no-repeat center bottom'});
+		$(this).find("span").stop().animate({opacity: 0}, 300);})
+	},function(){
+		$(".gallery").find("span").stop().animate({opacity: 1}, 300);
+		})
+});
+</script>
+</head>
+<body class="home">
+<div class="wrapper">
+<ul class="menu">
+	<li><span>集团介绍</span></li>
+    <li><span>品牌介绍</span>
+    <ul class="subMenu">
+    	<li><a href="#">小鹭鹭</a></li>
+        <li><a href="#">鹭鹭酒家</a></li>
+        <li><a href="#">鹭鹭1985</a></li>
+    </ul>
+    </li>
+    <li><span>宴会服务</span></li>
+    <li><span>资讯中心</span></li>
+    <li><span>促销优惠活动</span></li>
+    <li><span>会员专区</span></li>
+    <li><span>佳肴欣赏</span></li>
+    <li><span>招贤纳士</span></li>
+    <li><span>联系我们</span></li>
+</ul><table border="0" cellspacing="0" cellpadding="1" class="icons gallery">
+  <tr>
+    <td><div><a href="XLL/index.html" class="thumb" style="width:268px;height:236px;"><span style="width:268px;height:236px;"><img src="group/images/com_1.jpg"  /></span></a></div></td>
+    <td rowspan="2"><div><a href="LLJJ/index.html" class="thumb" style="width:338px;height:473px"><span style="width:338px;height:473px"><img src="group/images/com_3.jpg" alt=""  /></span></a></div></td>
+  </tr>
+  <tr>
+    <td><div><a href="1985/index.html" class="thumb" style="width:268px;height:235px;"><span style="width:268px;height:235px;"><img src="group/images/com_2.jpg"  /></span></a></td>
+    </tr>
+</table>
+</div>
+<div class="copyright">Copyright &copy; 2012 All Right Reserved.  <a href="#">沪 ICP备02323422</a></div>
+</body>
+</html>

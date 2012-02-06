@@ -1,0 +1,23 @@
+.picshow {MARGIN: 0px auto; WIDTH: 1000px; HEIGHT: 430px; overflow:hidden;}
+#picarea {MARGIN: 0px auto; WIDTH: 1000px; BACKGROUND: #fff; HEIGHT: 430px;}
+#bigpicarea {POSITION: relative; MARGIN: 0px auto; WIDTH: 1000px; HEIGHT: 345px; OVERFLOW: hidden}
+.image {TEXT-ALIGN: center}
+.image IMG {}
+#bigpicarea .word {TEXT-ALIGN: center; HEIGHT: 50px; COLOR: #333}
+#bigpicarea .word H3 {TEXT-ALIGN: center; LINE-HEIGHT: 48px; HEIGHT: 48px; COLOR: #333; FONT-SIZE: 14px}
+#bigpicarea .ui-els-hide {DISPLAY: none}
+#thumbs {LIST-STYLE-TYPE: none; MARGIN:3px auto 0;padding:0; WIDTH: 1024px; HEIGHT: 84px;}
+* HTML #thumbs {HEIGHT: 100%}
+#thumbs LI {WIDTH: 245px; DISPLAY: block; FLOAT: left; HEIGHT: 84px;padding:0 6px 0 0;}
+
+#thumbs LI A {WIDTH: 245px; height:84px; FONT-SIZE: 0px; position:relative; border:1px solid #797979;display:block;float:left;}
+#thumbs li a.grey{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)}
+#thumbs li a.actived{filter:none;}
+#thumbs li a span{display:block;width:245px; background:url(../images/mask.png) no-repeat 0 0;height:84px;float:left; position:absolute; z-index:1000;}
+#indicator{width:15px;height:10px; background:url(../images/indicator_featured.gif) no-repeat 0 0; position:absolute; z-index:1100;}
+#thumbs LI A:hover {}
+#thumbs LI A.current {}
+#thumbs LI.first IMG {}
+#thumbs LI.last IMG {}
+
+#smallpicarea {MARGIN: 0px auto; WIDTH: 1024px; }

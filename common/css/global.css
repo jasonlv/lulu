@@ -1,0 +1,36 @@
+﻿html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol,ul {
+	list-style: none;
+}
+q:before,q:after,
+blockquote:before,blockquote:after {
+	content: "";
+}
+
+body,th,td,div,p,span,textarea,input,select,li{font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1, Arial, Helvetica, sans-serif;}
+.clear{clear:both;font-size:1%;line-height:0;}
+.sharing{ text-align:center;color:#555;width:100%;margin:15px auto 0;}
+.sharing a{width:16px;height:17px; background:url(../../group/images/sns_icons.gif) no-repeat 0 0;margin:0 3px;}
+.sharing a img{width:17px;height:17px;}
+.sharing a.sns_sohu{ background-position:-1px 0;}
+.sharing a.sns_renren{ background-position:-23px 0;}
+.sharing a.sns_kaixin{ background-position:-43px 0;}
+.sharing a.sns_weibo{ background-position:-63px -1px;}
+.sharing a.sns_tencent{ background-position:-82px 0;}
+.sharing a.sns_douban{ background-position:-102px 0;}

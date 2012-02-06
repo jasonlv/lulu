@@ -1,0 +1,18 @@
+
+.home { background:#000 url(../images/home_bg.jpg) no-repeat center 0;
+}
+.wrapper{width:992px;margin:0 auto; position:relative;}
+ul.menu{list-style:none;float:left;position:absolute;top:623px;}
+ul.menu li{float:left; position:relative;}
+ul.menu li span{color:#fff;width:100px;margin:0 5px 0 0;display:block;float:left;font-weight:bold; text-decoration:none; text-align:center; cursor:pointer;height:43px;line-height:43px;}
+ul.menu li span:hover, ul.menu li span.actived{ background:#a3002e;}
+
+ul.menu li ul{float:left;left:0;padding:5px 0;margin:0; background:#cd1b45; display:none;width:100px; position:absolute; z-index:1000;}
+ul.menu li ul li a{margin:0 0;display:block; text-align:center;color:#fff; text-decoration:none;font-weight:normal;height:28px;line-height:28px;width:100px;}
+ul.menu li ul li a:hover, ul.menu li ul li a.actived{ background:url(../images/home_nav_hover.gif) no-repeat 0 0;}
+.copyright{ position:absolute;top:700px; text-align:center;width:100%;}
+.copyright a{color:#000; text-decoration:none;}
+
+.icons{ position:absolute; right:33px; top:118px;}
+.icons span, .icons a{display:block;float:left;overflow:hidden;}
+.icons a.grey img{ filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
